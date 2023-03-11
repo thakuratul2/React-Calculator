@@ -1,24 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Content from './Components/Content'
 import Navbar from './Components/Navbar'
 
+function App() {
+  const [name,setName] = useState("Atul")
 
-class App extends React.Component{
- constructor(){
-  super();
-  this.state={
-    msg: "Click Me"
+  function setData(){
+    setName("Vicky")
   }
- }
-render(){
-  return(
+  return (
     <>
       <Navbar title="React Learning [Atul Pratap Singh]" aboutTitle="About Us" contactTitle="Contact Us"/>
-      <Content />
-      <h1>{this.state.msg}</h1>
+      <Content name={name} data={setData}/>
     </>
   )
-}
 }
 
 export default App
