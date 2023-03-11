@@ -4,7 +4,6 @@ function Content(props) {
   return (
     <Fragment>
 <div className='text-center'>{props.name}</div>
-<button onClick={props.data}>Click Me</button>
     </Fragment>
     
   )

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Content from './Components/Content'
+import Effect from './Components/Effect'
 import Navbar from './Components/Navbar'
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
     <>
       <Navbar title="React Learning [Atul Pratap Singh]" aboutTitle="About Us" contactTitle="Contact Us"/>
       <Content name={name} data={setData}/>
+      <Effect />
+      <br/>
+      <button className='btn btn-primary' onClick={()=>setName("Vicky")}>Click Me</button>
     </>
   )
 }
